@@ -1,0 +1,17 @@
+{
+	"name": "hxjs-fabric",
+	"license": "MIT",
+	"tags": [
+		"fabric",
+		"js",
+		"extern"
+	],
+	"classPath": "src",
+	"description": "Extern for fabric.js",
+	"contributors": [
+		"kevinresol"
+	],
+	"releasenote": "Initial Release",
+	"version": "0.0.0",
+	"url": "https://github.com/kevinresol/hxjs-fabric"
+}

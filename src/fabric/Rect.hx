@@ -1,0 +1,74 @@
+package fabric;
+
+@:native('fabric.Rect')
+extern class Rect {
+	// IObjectOptions
+	var type : String;
+	var originX : String;
+	var originY : String;
+	var top : Float;
+	var left : Float;
+	var width : Float;
+	var height : Float;
+	var scaleX : Float;
+	var scaleY : Float;
+	var flipX : Bool;
+	var flipY : Bool;
+	var opacity : Float;
+	var angle : Float;
+	var cornerSize : Float;
+	var transparentCorners : Bool;
+	var hoverCursor : String;
+	var padding : Float;
+	var borderColor : String;
+	var cornerColor : String;
+	var centeredScaling : Bool;
+	var centeredRotation : Bool;
+	var fill : String;
+	var fillRule : String;
+	var globalCompositeOperation : String;
+	var backgroundColor : String;
+	var stroke : String;
+	var strokeWidth : Float;
+	var strokeDashArray : Array<Dynamic>;
+	var strokeLineCap : String;
+	var strokeLineJoin : String;
+	var strokeMiterLimit : Float;
+	// var shadow : haxe.extern.EitherType<IShadow, String>;
+	var borderOpacityWhenMoving : Float;
+	var borderScaleFactor : Float;
+	var transformMatrix : Array<Dynamic>;
+	var minScaleLimit : Float;
+	var selectable : Bool;
+	var evented : Bool;
+	var visible : Bool;
+	var hasControls : Bool;
+	var hasBorders : Bool;
+	var hasRotatingPoint : Bool;
+	var rotatingPointOffset : Float;
+	var perPixelTargetFind : Bool;
+	var includeDefaultValues : Bool;
+	var clipTo : haxe.Constraints.Function;
+	var lockMovementX : Bool;
+	var lockMovementY : Bool;
+	var lockRotation : Bool;
+	var lockScalingX : Bool;
+	var lockScalingY : Bool;
+	var lockUniScaling : Bool;
+	var lockScalingFlip : Bool;
+	var name : String;
+	var data : Dynamic;
+	// IRectOptions
+	var x : Float;
+	var y : Float;
+	var rx : Float;
+	var ry : Float;
+	function new(?options:IRectOptions):Void;
+	function initialize(?points:Array<Float>, ?options:Dynamic):Rect;
+	function complexity():Float;
+	function toObject(propertiesToInclude:Array<Dynamic>):Dynamic;
+	function toSVG(?reviver:haxe.Constraints.Function):String;
+	static var ATTRIBUTE_NAMES : Array<String>;
+	// static function fromElement(element:SVGElement, ?options:IRectOptions):Rect;
+	static function fromObject(object:Dynamic):Rect;
+}
